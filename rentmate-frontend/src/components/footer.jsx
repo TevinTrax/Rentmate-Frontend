@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, ArrowUp, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import { FaHome } from "react-icons/fa";
+import { Link } from "lucide-react";
 
 export default function Footer() {
   return (
