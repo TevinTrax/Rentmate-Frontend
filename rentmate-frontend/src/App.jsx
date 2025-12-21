@@ -7,7 +7,7 @@ import Properties from "./pages/properties.jsx";
 import Getstarted from "./pages/getstarted.jsx";
 import Contact  from "./pages/contact.jsx";
 import AdminRegistration from "./components/adminregistration.jsx";
-import LandlordRegistration from "./components/landlordRegistration.jsx";
+import LandlordRegistration from "./components/Landlordregistration.jsx";
 import TenantRegistration from "./components/tenantregistration.jsx";
 import SignIn from "./components/signin.jsx";
 import Pricing from "./pages/pricing.jsx";
@@ -15,6 +15,7 @@ import Landing from "./pages/landing.jsx";
 import FreeTrial from "./pages/freetrial.jsx";
 import Testimonials from "./pages/testimonials.jsx";
 import Advert from "./pages/advert.jsx";
+import ForgotPassword from "./components/forgotpassword.jsx";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/get-started" element={<Getstarted/>}/>
           <Route path="/sign-in" element={<SignIn/>}/>
           <Route path="/free-trial" element={<FreeTrial/>}/>
+          <Route path="/forgot-password" element={<ForgotPassword/>}/>
 
           {/* menu navigation */}
           <Route path="/home" element={<Home/>}/>
