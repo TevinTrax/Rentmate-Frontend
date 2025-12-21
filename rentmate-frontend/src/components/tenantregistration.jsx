@@ -104,7 +104,7 @@ function TenantRegistration() {
             </label>
             <input
               id=""
-              type="number"
+              type="text"
               placeholder="Enter Your House No"
               className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-md"
             />
