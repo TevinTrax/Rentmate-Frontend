@@ -252,7 +252,7 @@ function Pricing() {
           </table>
         </div>
       </div>
-      <div className="max-w-3xl mx-auto p-6 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-50 shadow-md">
+      <div className="max-w-3xl mx-auto my-10 p-6 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-50 shadow-md">
         <h4 className="text-3xl text-gray-800 text-center font-bold pt-4">
           Ready to simplify property management?
         </h4>

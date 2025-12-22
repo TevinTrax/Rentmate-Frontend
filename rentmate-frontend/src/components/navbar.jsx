@@ -93,19 +93,18 @@ function Navbar() {
             <li>
               <Link
                 className="block text-gray-800 text-base hover:text-blue-500 font-semibold"
-                to={"/features"}
+                to={"/#features"}
               >
                 Features
               </Link>
             </li>
             <li>
-              <Link
-                href="#"
+              <button
                 className="block text-gray-800 text-base hover:text-blue-500 font-semibold"
-                to={"/pricing"}
+                onClick={()=>navigate("/pricing")}
               >
                 Pricing
-              </Link>
+              </button>
             </li>
             <li>
               <Link
@@ -120,7 +119,7 @@ function Navbar() {
               <Link
                 href="#"
                 className="block text-gray-800 text-base hover:text-blue-500 font-semibold"
-                to={"/contact"}
+                to={"/#contact"}
               >
                 Contact
               </Link>
