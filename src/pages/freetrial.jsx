@@ -1,4 +1,4 @@
-import { FaUser, FaPhone, FaEnvelope, FaLock } from "react-icons/fa6";
+import { FaUser, FaPhone, FaEnvelope, FaLock, FaCircleCheck } from "react-icons/fa6";
 
 function FreeTrial() {
   return (
@@ -7,29 +7,29 @@ function FreeTrial() {
 
         {/* Left Content */}
         <div className="p-6">
-          <h1 className="text-5xl font-bold text-gray-800 leading-tight pt-16">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight pt-8 md:pt-16">
             Take Control of Your Rentals Today
           </h1>
 
-          <p className="text-xl text-gray-500 pt-4 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-500 pt-4 leading-relaxed">
             Streamline property management with our all-in-one platform. Automate rent collection,
             manage tenants, and track maintenance from one powerful dashboard.
           </p>
 
-          <ul className="mt-4 list-disc list-inside space-y-2 text-gray-700">
-            <li>14-day free trial, no credit card required</li>
-            <li>Cancel anytime, no questions asked</li>
-            <li>Trusted by 10,000+ property managers</li>
+          <ul className="mt-4 space-y-2 text-sm md:text-md text-gray-700">
+            <li><FaCircleCheck className="inline mr-2 text-blue-500" />14-day free trial, no credit card required</li>
+            <li><FaCircleCheck className="inline mr-2 text-blue-500" />Cancel anytime, no questions asked</li>
+            <li><FaCircleCheck className="inline mr-2 text-blue-500" />Trusted by 10,000+ property managers</li>
           </ul>
         </div>
 
         {/* Form */}
-        <div className="p-6">
-          <form className="space-y-4 p-8 mt-6 bg-white rounded-xl shadow-lg border">
+        <div className="p-3 md:p-6">
+          <form className="space-y-4 p-6 md:p-8 mt-3 md:mt-6 bg-white rounded-xl shadow-lg border">
 
             {/* Full Name */}
             <div>
-              <label htmlFor="name" className="font-semibold text-gray-800">
+              <label htmlFor="name" className="text-md font-semibold text-gray-800">
                 Full Name
               </label>
               <div className="relative mt-1">
@@ -39,7 +39,7 @@ function FreeTrial() {
                   name="name"
                   type="text"
                   placeholder="Enter your full name"
-                  className="w-full pl-10 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full pl-10 p-2 text-sm md:text-md border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />
               </div>
@@ -47,7 +47,7 @@ function FreeTrial() {
 
             {/* Email */}
             <div>
-              <label htmlFor="email" className="font-semibold text-gray-800">
+              <label htmlFor="email" className="font-semibold text-md text-gray-800">
                 Email Address
               </label>
               <div className="relative mt-1">
@@ -57,7 +57,7 @@ function FreeTrial() {
                   name="email"
                   type="email"
                   placeholder="you@gmail.com"
-                  className="w-full pl-10 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full pl-10 p-2 text-sm md:text-md border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />
               </div>
@@ -65,7 +65,7 @@ function FreeTrial() {
 
             {/* Phone */}
             <div>
-              <label htmlFor="phone" className="font-semibold text-gray-800">
+              <label htmlFor="phone" className="font-semibold text-md text-gray-800">
                 Phone Number
               </label>
               <div className="relative mt-1">
@@ -75,7 +75,7 @@ function FreeTrial() {
                   name="phone"
                   type="tel"
                   placeholder="+254700000000"
-                  className="w-full pl-10 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full pl-10 p-2 text-sm md:text-md border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />
               </div>
@@ -83,7 +83,7 @@ function FreeTrial() {
 
             {/* Password */}
             <div>
-              <label htmlFor="password" className="font-semibold text-gray-800">
+              <label htmlFor="password" className="font-semibold text-md text-gray-800">
                 Password
               </label>
               <div className="relative mt-1">
@@ -93,7 +93,7 @@ function FreeTrial() {
                   name="password"
                   type="password"
                   placeholder="Enter your password"
-                  className="w-full pl-10 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full pl-10 p-2 text-sm md:text-md border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />
               </div>
@@ -101,7 +101,7 @@ function FreeTrial() {
 
             {/* Confirm Password */}
             <div>
-              <label htmlFor="confirmPassword" className="font-semibold text-gray-800">
+              <label htmlFor="confirmPassword" className="font-semibold text-md text-gray-800">
                 Confirm Password
               </label>
               <div className="relative mt-1">
@@ -111,13 +111,13 @@ function FreeTrial() {
                   name="confirmPassword"
                   type="password"
                   placeholder="Confirm your password"
-                  className="w-full pl-10 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full pl-10 p-2 text-sm md:text-md border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required 
                 />
               </div>
             </div>
 
-            <button className="w-full p-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:opacity-90 transition">
+            <button className="w-full p-3 text-md bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:opacity-90 transition">
               Start 14-Day Free Trial
             </button>
 

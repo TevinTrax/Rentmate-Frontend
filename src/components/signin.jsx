@@ -21,22 +21,22 @@ function SignIn() {
         <form className="space-y-5">
           {/* Header */}
           <div className="text-center">
-            <h1 className="text-2xl sm:text-3xl font-semibold text-black mb-1">
+            <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-1">
               Welcome Back
             </h1>
-            <p className="text-gray-500 text-sm sm:text-base">
+            <p className="text-gray-500 text-sm md:text-base">
               Sign in to access your dashboard
             </p>
           </div>
 
           {/* Sign In As */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-2 sm:space-y-0">
-            <label htmlFor="role" className="text-md text-black">
+            <label htmlFor="role" className="text-md text-gray-800 mb-1">
               Sign In As
             </label>
             <select
               id="role"
-              className="text-md text-black border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="text-sm md:text-md text-black border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             >
               <option value="Admin">Admin</option>
@@ -49,7 +49,7 @@ function SignIn() {
           <div>
             <label
               htmlFor="email"
-              className="flex items-center gap-2 text-md text-black mb-1"
+              className="flex items-center gap-2 text-md text-gray-800 pb-2"
             >
               <FaUser className="text-blue-500" /> Email or Username
             </label>
@@ -57,7 +57,7 @@ function SignIn() {
               id="email"
               type="email"
               placeholder="Enter your email or username"
-              className="w-full p-2 sm:p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-2 sm:p-3 text-sm md:text-md border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
           </div>
@@ -66,7 +66,7 @@ function SignIn() {
           <div>
             <label
               htmlFor="password"
-              className="flex items-center gap-2 text-md text-black mb-1"
+              className="flex items-center gap-2 text-md text-gray-800 pb-2"
             >
               <FaLock className="text-blue-500" /> Password
             </label>
@@ -74,7 +74,7 @@ function SignIn() {
               id="password"
               type="password"
               placeholder="Enter your password"
-              className="w-full p-2 sm:p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-2 md:p-3 text-sm md:text-md border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
           </div>
@@ -84,7 +84,7 @@ function SignIn() {
             <button
               type="button"
               onClick={() => navigate("/forgot-password")}
-              className="text-sm sm:text-md text-blue-500 hover:underline"
+              className="text-sm md:text-md text-blue-500 hover:underline"
             >
               Forgot Password?
             </button>
@@ -93,14 +93,14 @@ function SignIn() {
           {/* Sign In Button */}
           <button
             type="submit"
-            className="w-full rounded-lg text-lg font-semibold text-white bg-blue-500 py-2 sm:py-3 hover:bg-blue-600 transition-colors duration-200"
+            className="w-full rounded-lg text-md md:text-lg font-semibold text-white bg-blue-500 py-2 sm:py-3 hover:bg-blue-600 transition-colors duration-200"
           >
             Sign In
           </button>
 
           {/* Register Link */}
-          <p className="text-sm sm:text-md text-black text-center">
-            Don’t have an account?
+          <p className="text-sm md:text-md text-gray-800 text-center">
+            Don’t have an account? <br />
             <span
               className="text-blue-500 px-2 cursor-pointer hover:underline"
               onClick={() => navigate("/get-started")}

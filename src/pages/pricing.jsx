@@ -155,7 +155,7 @@ function Pricing() {
             </ul>
 
             <div className="mt-6">
-              <button className={plan.buttonStyle}>{plan.button}</button>
+              <button className={plan.buttonStyle} onClick={()=>navigate("/payment")}>{plan.button}</button>
             </div>
           </div>
         ))}

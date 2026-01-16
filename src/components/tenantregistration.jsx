@@ -5,7 +5,7 @@ function TenantRegistration() {
   const navigate = useNavigate();
 
   return (
-    <section className="w-full p-10 pt-24">
+    <section className="w-full p-5 pt-24 bg-blue-50">
       {/* Back button */}
       <div className="container mx-auto flex items-center mb-4">
         <button
@@ -18,88 +18,88 @@ function TenantRegistration() {
       </div>
 
       {/* Registration Form */}
-      <div className="max-w-3xl mx-auto p-6 border rounded-xl shadow-md bg-white">
-        <h1 className="text-2xl font-semibold text-blue-600 text-center mb-4">
+      <div className="max-w-3xl mx-auto p-6 border rounded-xl shadow-md bg-gray-100">
+        <h1 className="text-xl md:text-2xl font-semibold text-blue-600 text-center mb-4">
           Tenant Registration
         </h1>
 
         <form className="space-y-4">
           <div>
-            <label htmlFor="fullname" className="block text-md text-black">
+            <label htmlFor="fullname" className="block text-md text-gray-800 pb-1">
               Full Name
             </label>
             <input
               id="fullname"
               type="text"
               placeholder="Enter your full name"
-              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-md"
+              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-sm md:text-md"
             />
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-md text-black">
+            <label htmlFor="email" className="block text-md text-gray-800 pb-1">
               Email Address
             </label>
             <input
               id="email"
               type="email"
               placeholder="example@email.com"
-              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-md"
+              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-sm md:text-md"
             />
           </div>
 
           <div>
-            <label htmlFor="idNumber" className="block text-md text-black">
+            <label htmlFor="idNumber" className="block text-md text-gray-800 pb-1">
               ID Number
             </label>
             <input
               id="idNumber"
               type="number"
               placeholder="Enter your ID number"
-              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-md"
+              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-sm md:text-md"
             />
           </div>
 
           {/* Phone Numbers */}
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             <div>
-              <label htmlFor="phone" className="block text-md text-black">
+              <label htmlFor="phone" className="block text-md text-gray-800 pb-1">
                 Phone Number
               </label>
               <input
                 id="phone"
                 type="tel"
                 placeholder="e.g. 0700000000"
-                className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-md"
+                className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-sm md:text-md"
               />
             </div>
             <div>
-              <label htmlFor="altPhone" className="block text-md text-black">
+              <label htmlFor="altPhone" className="block text-md text-gray-800 pb-1">
                 Alternative Phone Number
               </label>
               <input
                 id="altPhone"
                 type="tel"
                 placeholder="e.g. 0700000000"
-                className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-md"
+                className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-sm md:text-md"
               />
             </div>
           </div>
 
           <div>
-            <label htmlFor="" className="block text-md text-black">
+            <label htmlFor="" className="block text-md text-gray-800 pb-1">
               Apartment Name
             </label>
             <input
               id=""
               type="text"
               placeholder="Enter Your Apartment Name"
-              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-md"
+              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-sm md:text-md"
             />
           </div>
 
           <div>
-            <label htmlFor="" className="block text-md text-black">
+            <label htmlFor="" className="block text-md text-gray-800 pb-1">
               House Number
             </label>
             <input
@@ -116,7 +116,7 @@ function TenantRegistration() {
             <input
               type="password"
               placeholder="Create Password"
-              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 pl-10 text-md"
+              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 pl-10 text-sm md:text-md"
             />
           </div>
 
@@ -125,24 +125,24 @@ function TenantRegistration() {
             <input
               type="password"
               placeholder="Re-enter Password"
-              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 pl-10 text-md"
+              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 pl-10 text-sm md:text-md"
             />
           </div>
 
           <div>
-            <label htmlFor="ref" className="block text-md text-black">
+            <label htmlFor="ref" className="block text-md text-gray-800 pb-1">
               How did you hear about us?
             </label>
             <input
               id="ref"
               type="text"
               placeholder="How did you hear about us?"
-              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-md"
+              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-sm md:text-md"
             />
           </div>
 
           {/* Terms */}
-          <p className="text-md text-black">
+          <p className="text-md text-gray-800">
             By continuing, you agree to our{" "}
             <a href="#" className="text-blue-500 hover:underline">
               Terms of Service
@@ -153,12 +153,12 @@ function TenantRegistration() {
             </a>.
           </p>
 
-          <button className="w-full text-lg font-semibold text-white bg-blue-500 rounded-lg p-2 hover:bg-blue-600">
+          <button className="w-full text-md md:text-lg font-semibold text-white bg-blue-500 rounded-lg p-2 hover:bg-blue-600">
             Create Account
           </button>
 
-          <p className="text-md text-center text-black">
-            Already have an account?{" "}
+          <p className="text-md text-center text-gray-800">
+            Already have an account?{" "} <br />
             <span className="text-blue-500 hover:underline cursor-pointer" onClick={()=>navigate("/sign-in")}>
               Sign In
             </span>
