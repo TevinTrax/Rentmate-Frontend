@@ -1,4 +1,6 @@
 import { FaUser, FaPhone, FaEnvelope, FaLock, FaCircleCheck } from "react-icons/fa6";
+import bgImage from "@/assets/images/img5.jpg";
+
 
 function FreeTrial() {
   return (
@@ -127,6 +129,12 @@ function FreeTrial() {
             </ul>
           </form>
         </div>
+      </div>
+      <div
+        className="h-96 container mx-auto mb-14 rounded-xl
+                   bg-none md:bg-cover md:bg-center md:bg-no-repeat"
+                style={{ backgroundImage: `linear-gradient(to top right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${bgImage})` }}
+       >
       </div>
     </section>
   );

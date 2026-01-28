@@ -1,5 +1,5 @@
-import Cards from "../components/card.jsx";
-import PropertyNotice from "./propertynotice.jsx";
+import Cards from "../../components/card.jsx";
+import PropertyNotice from "./PropertyNotice.jsx";
 
 function Properties() {
   return (

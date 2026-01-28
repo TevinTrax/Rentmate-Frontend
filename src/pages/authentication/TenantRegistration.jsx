@@ -1,7 +1,7 @@
 import { FaLock, FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-function LandlordRegistration() {
+function TenantRegistration() {
   const navigate = useNavigate();
 
   return (
@@ -20,7 +20,7 @@ function LandlordRegistration() {
       {/* Registration Form */}
       <div className="max-w-3xl mx-auto p-6 border rounded-xl shadow-md bg-gray-100">
         <h1 className="text-xl md:text-2xl font-semibold text-blue-600 text-center mb-4">
-          Landlord Registration
+          Tenant Registration
         </h1>
 
         <form className="space-y-4">
@@ -63,7 +63,7 @@ function LandlordRegistration() {
           {/* Phone Numbers */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             <div>
-              <label htmlFor="phone" className="block text-md text-gray-800">
+              <label htmlFor="phone" className="block text-md text-gray-800 pb-1">
                 Phone Number
               </label>
               <input
@@ -74,7 +74,7 @@ function LandlordRegistration() {
               />
             </div>
             <div>
-              <label htmlFor="altPhone" className="block text-md text-gray-800">
+              <label htmlFor="altPhone" className="block text-md text-gray-800 pb-1">
                 Alternative Phone Number
               </label>
               <input
@@ -86,25 +86,54 @@ function LandlordRegistration() {
             </div>
           </div>
 
+          <div>
+            <label htmlFor="" className="block text-md text-gray-800 pb-1">
+              Apartment Name
+            </label>
+            <input
+              id=""
+              type="text"
+              placeholder="Enter Your Apartment Name"
+              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-sm md:text-md"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="" className="block text-md text-gray-800 pb-1">
+              House Number
+            </label>
+            <input
+              id=""
+              type="text"
+              placeholder="Enter Your House No"
+              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-md"
+            />
+          </div>
+
           {/* Password Fields */}
-          <div className="relative">
-            <FaLock className="absolute left-3 top-3 text-gray-400" />
-            <input
-              type="password"
-              placeholder="Create Password"
-              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 pl-10 text-sm md:text-md"
-            />
+          <div>
+            <label htmlFor="" className="text-md text-gray-800">Create Password</label>
+            <div className="relative mt-1">
+              <FaLock className="absolute left-3 top-3 text-gray-400" />
+              <input
+               type="password"
+               placeholder="Create Password"
+               className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 pl-10 text-sm md:text-md"
+              />
+            </div>
           </div>
 
-          <div className="relative">
-            <FaLock className="absolute left-3 top-3 text-gray-400" />
-            <input
-              type="password"
-              placeholder="Re-enter Password"
-              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 pl-10 text-sm md:text-md"
-            />
+          <div>
+            <label htmlFor="" className="text-md text-gray-800">Confirm Password</label>
+            <div className="relative mt-1">
+               <FaLock className="absolute left-3 top-3 text-gray-400" />
+               <input
+                type="password"
+                placeholder="Re-enter Password"
+                className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 pl-10 text-sm md:text-md"
+              />
+            </div>
           </div>
-
           <div>
             <label htmlFor="ref" className="block text-md text-gray-800 pb-1">
               How did you hear about us?
@@ -118,7 +147,7 @@ function LandlordRegistration() {
           </div>
 
           {/* Terms */}
-          <p className="text-md text-black">
+          <p className="text-md text-gray-800">
             By continuing, you agree to our{" "}
             <a href="#" className="text-blue-500 hover:underline">
               Terms of Service
@@ -133,7 +162,7 @@ function LandlordRegistration() {
             Create Account
           </button>
 
-          <p className="text-md text-center text-black">
+          <p className="text-md text-center text-gray-800">
             Already have an account?{" "} <br />
             <span className="text-blue-500 hover:underline cursor-pointer" onClick={()=>navigate("/sign-in")}>
               Sign In
@@ -145,4 +174,4 @@ function LandlordRegistration() {
   );
 }
 
-export default LandlordRegistration;
+export default TenantRegistration;

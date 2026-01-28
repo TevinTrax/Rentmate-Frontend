@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import bgImage from '../assets/images/img2.jpg';
+import bgImage from '@/assets/images/img2.jpg';
 
 function Home() {
 
@@ -37,7 +37,7 @@ function Home() {
 
         {/* Heading */}
         <div className="max-w-2xl text-left mb-3">
-          <h3 className="text-5xl md:text-6xl font-bold text-black p-3">
+          <h3 className="text-5xl md:text-6xl font-bold text-gray-800 p-3">
             Simplify Your <br />
             <span className="text-blue-500">Rental Business</span>
           </h3>

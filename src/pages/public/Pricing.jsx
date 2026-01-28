@@ -14,7 +14,7 @@ function Pricing() {
     {
       name: "Basic",
       icon: <FaBuildingColumns size={24} className="text-blue-500" />,
-      price: "Ksh 6,500",
+      price: "Ksh 3,500",
       desc: "Ideal for small landlords or single property owners",
       button: "Get Started",
       buttonStyle:
@@ -35,7 +35,7 @@ function Pricing() {
       name: "Standard",
       popular: true,
       icon: <FaUsers size={24} className="text-blue-500" />,
-      price: "Ksh 9,500",
+      price: "Ksh 6,500",
       desc: "For medium-scale landlords",
       button: "Choose Standard",
       buttonStyle:
@@ -57,7 +57,7 @@ function Pricing() {
     {
       name: "Premium",
       icon: <FaArrowTrendUp size={24} className="text-blue-500" />,
-      price: "Ksh 12,000",
+      price: "Ksh 9,500",
       desc: "For large property managers or agencies",
       button: "Go Premium",
       buttonStyle:
@@ -155,7 +155,7 @@ function Pricing() {
             </ul>
 
             <div className="mt-6">
-              <button className={plan.buttonStyle} onClick={()=>navigate("/payment")}>{plan.button}</button>
+              <button className={plan.buttonStyle} onClick={()=>navigate("/checkout")}>{plan.button}</button>
             </div>
           </div>
         ))}

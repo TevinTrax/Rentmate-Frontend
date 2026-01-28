@@ -64,7 +64,7 @@ function Features() {
   return (
     <section id="features" className="w-full">
       <div className="container mx-auto p-6">
-        <h1 className="max-w-2xl mx-auto text-center text-gray-800 text-4xl md:leading-tightpy-4 font-bold">
+        <h1 className="max-w-2xl mx-auto pt-10 text-center text-gray-800 text-4xl md:leading-tightpy-4 font-bold">
           Everything You Need to{" "}
           <br />
           <span className="text-blue-500">Manage Properties</span>

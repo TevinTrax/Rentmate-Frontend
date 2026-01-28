@@ -1,7 +1,7 @@
 import { FaLock, FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-function TenantRegistration() {
+function AdminRegistration() {
   const navigate = useNavigate();
 
   return (
@@ -20,7 +20,7 @@ function TenantRegistration() {
       {/* Registration Form */}
       <div className="max-w-3xl mx-auto p-6 border rounded-xl shadow-md bg-gray-100">
         <h1 className="text-xl md:text-2xl font-semibold text-blue-600 text-center mb-4">
-          Tenant Registration
+          Admin Registration
         </h1>
 
         <form className="space-y-4">
@@ -86,63 +86,33 @@ function TenantRegistration() {
             </div>
           </div>
 
-          <div>
-            <label htmlFor="" className="block text-md text-gray-800 pb-1">
-              Apartment Name
-            </label>
-            <input
-              id=""
-              type="text"
-              placeholder="Enter Your Apartment Name"
-              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-sm md:text-md"
-            />
-          </div>
-
-          <div>
-            <label htmlFor="" className="block text-md text-gray-800 pb-1">
-              House Number
-            </label>
-            <input
-              id=""
-              type="text"
-              placeholder="Enter Your House No"
-              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-md"
-            />
-          </div>
-
           {/* Password Fields */}
-          <div className="relative">
-            <FaLock className="absolute left-3 top-3 text-gray-400" />
-            <input
-              type="password"
-              placeholder="Create Password"
-              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 pl-10 text-sm md:text-md"
-            />
-          </div>
-
-          <div className="relative">
-            <FaLock className="absolute left-3 top-3 text-gray-400" />
-            <input
-              type="password"
-              placeholder="Re-enter Password"
-              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 pl-10 text-sm md:text-md"
-            />
+          <div>
+            <label htmlFor="" className="text-md text-gray-800">Create Password</label>
+            <div className="relative mt-1">
+              <FaLock className="absolute left-3 top-3 text-gray-400" />
+              <input
+                type="password"
+                placeholder="Create Password"
+                className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 pl-10 text-sm md:text-md"
+              />
+            </div>
           </div>
 
           <div>
-            <label htmlFor="ref" className="block text-md text-gray-800 pb-1">
-              How did you hear about us?
-            </label>
-            <input
-              id="ref"
-              type="text"
-              placeholder="How did you hear about us?"
-              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-sm md:text-md"
-            />
+            <label htmlFor="" className="text-md text-gray-800">Confirm Password</label>
+              <div className="relative mt-1">
+              <FaLock className="absolute left-3 top-3 text-gray-400" />
+              <input
+                type="password"
+                placeholder="Re-enter Password"
+                className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 pl-10 text-sm md:text-md"
+              />
+            </div>
           </div>
 
           {/* Terms */}
-          <p className="text-md text-gray-800">
+          <p className="text-md text-black">
             By continuing, you agree to our{" "}
             <a href="#" className="text-blue-500 hover:underline">
               Terms of Service
@@ -157,7 +127,7 @@ function TenantRegistration() {
             Create Account
           </button>
 
-          <p className="text-md text-center text-gray-800">
+          <p className="text-md text-center text-black">
             Already have an account?{" "} <br />
             <span className="text-blue-500 hover:underline cursor-pointer" onClick={()=>navigate("/sign-in")}>
               Sign In
@@ -169,4 +139,4 @@ function TenantRegistration() {
   );
 }
 
-export default TenantRegistration;
+export default AdminRegistration;
