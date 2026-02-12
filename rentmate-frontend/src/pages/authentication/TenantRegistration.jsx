@@ -119,18 +119,35 @@ function TenantRegistration() {
               readOnly
             />
           </div>
-          <div>
-            <label htmlFor="fullname" className="block text-md text-gray-800 pb-1">
-              Full Name
-            </label>
-            <input
-              id="full_name"
-              type="text"
-              placeholder="Enter your full name"
-              value={formData.full_name}
-              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-sm md:text-md"
-              onChange={handleChange}
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+            <div className="">
+              <label htmlFor="full_name" className="block text-md text-gray-800 pb-1">
+                First Name
+              </label>
+              <input
+                id="first_name"
+                type="text"
+                placeholder="Enter your first name"
+                className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-sm md:text-md"
+                value={formData.first_name}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="">
+              <label htmlFor="full_name" className="block text-md text-gray-800 pb-1">
+                Last Name
+              </label>
+              <input
+                id="last_name"
+                type="text"
+                placeholder="Enter your last name"
+                className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-sm md:text-md"
+                value={formData.last_name}
+                onChange={handleChange}
+                required
+              />
+            </div>
           </div>
 
           <div>
@@ -158,6 +175,7 @@ function TenantRegistration() {
               value={formData.id_number}
               className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-sm md:text-md"
               onChange={handleChange}
+              max={8}
             />
           </div>
 

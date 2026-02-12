@@ -8,7 +8,8 @@ function AdminRegistration() {
 
   // Initialize form data with role from URL param
   const [formData, setFormData] = useState({
-    full_name: "",
+    first_name: "",
+    last_name:"",
     role: role || "",           // role from URL param
     email: "",
     id_number: "",
@@ -43,7 +44,8 @@ function AdminRegistration() {
     try {
       // Prepare the payload: exclude confirmPassword since backend doesn't expect it
       const {
-        full_name,
+        first_name,
+        last_name,
         role,
         email,
         id_number,
@@ -58,7 +60,8 @@ function AdminRegistration() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          full_name,
+          first_name,
+          last_name,
           role,
           email,
           phone_number,
@@ -114,19 +117,35 @@ function AdminRegistration() {
             />
           </div>
 
-          <div>
-            <label htmlFor="full_name" className="block text-md text-gray-800 pb-1">
-              Full Name
-            </label>
-            <input
-              id="full_name"
-              type="text"
-              placeholder="Enter your full name"
-              className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-sm md:text-md"
-              value={formData.full_name}
-              onChange={handleChange}
-              required
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+            <div className="">
+              <label htmlFor="full_name" className="block text-md text-gray-800 pb-1">
+                First Name
+              </label>
+              <input
+                id="first_name"
+                type="text"
+                placeholder="Enter your first name"
+                className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-sm md:text-md"
+                value={formData.first_name}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="">
+              <label htmlFor="full_name" className="block text-md text-gray-800 pb-1">
+                Last Name
+              </label>
+              <input
+                id="last_name"
+                type="text"
+                placeholder="Enter your last name"
+                className="w-full rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400 p-2 text-sm md:text-md"
+                value={formData.last_name}
+                onChange={handleChange}
+                required
+              />
+            </div>
           </div>
 
           <div>
@@ -156,6 +175,7 @@ function AdminRegistration() {
               value={formData.id_number}
               onChange={handleChange}
               required
+              max={8}
             />
           </div>
 

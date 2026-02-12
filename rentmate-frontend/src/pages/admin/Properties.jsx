@@ -163,7 +163,7 @@ function AdminProperties() {
           </form>
 
           {/* Table */}
-          <div className="mt-6 overflow-hidden rounded-lg border border-gray-200 bg-white">
+          <div className="mt-6 overflow-visible rounded-lg border border-gray-200 bg-white">
             <table className="w-full">
               <thead className="bg-gray-100 text-left">
                 <tr>
